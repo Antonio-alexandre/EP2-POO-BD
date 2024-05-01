@@ -13,7 +13,7 @@ public class ClienteDAO extends ConnectionDAO{
 
         connectToDB();
 
-        String sql = "INSERT INTO Cliente (idc, cpf, nome, email) values(?,?,?,?)";
+        String sql = "INSERT INTO Clientes (idc, cpf, nome, email) values(?,?,?,?)";
         try {
             pst = con.prepareStatement(sql);
             pst.setInt(1, cliente.getIdc());

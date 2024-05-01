@@ -14,7 +14,7 @@ public class VeiculosDAO extends ConnectionDAO {
 
         connectToDB();
 
-        String sql = "INSERT INTO Veiculos (idve, placa, nome, email) values(?,?,?,?)";
+        String sql = "INSERT INTO Veiculos (idve, placa, cor, modelo) values(?,?,?,?)";
         try {
             pst = con.prepareStatement(sql);
             pst.setInt(1, veiculo.getIdve());
